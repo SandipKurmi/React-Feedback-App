@@ -3,9 +3,10 @@ import Header from './components/Header';
 import FeedbackList from './components/FeedbackList'
 import FeedbackData from './data/FeedbackData'
 
-function App() {
-const [feedback , setFeedback] = useState([FeedbackData])
 
+
+function App() {
+const [feedback , setFeedback] = useState(FeedbackData)
 
 
   return (
@@ -14,6 +15,7 @@ const [feedback , setFeedback] = useState([FeedbackData])
       <div className="container">
       <FeedbackList feedback={feedback} />
       </div>
+
     </>
   )
 }
